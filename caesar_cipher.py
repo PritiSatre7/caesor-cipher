@@ -5,7 +5,9 @@ Function for caesar_cipher.
 
 def encrypt_caesar(text, shift):
     """
-    Function for caesar_cipher encryption.
+    This Function encrypts the input text using caesar cipher.
+    Each character is shifted by the given value.
+
     :param text: The input text to be encrypted.
     :param shift: Number of characters to shift.
     :return: Encrypted text.
