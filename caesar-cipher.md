@@ -24,13 +24,16 @@ Encrypted Example:
 'L', Plus 2 characters -> 'N'
 'O', Plus 2 characters -> 'Q'
 Encrypted Character = Original Character + 2
-###Encryption output
+
+Encryption output
 Input: HELLO  
 Shift: 2 
 Output: JGNNQ
+```
 
 2.Decryption (Using Subtraction)
 Each encrypted character is shifted backward by 2 using subtraction.
+
 ```
 Decryption Example
 'J', Minus 2 characters -> 'H'
@@ -40,14 +43,12 @@ Decryption Example
 'Q', Minus 2 characters -> 'O'
 
 Decrypted Character = Encrypted Character − 2
-```
-Decryption output
+
+Decryption Output
 Input: JGNNQ  
 Shift: 2 
 Output: HELLO
-
 ```
 Final Output
 Encrypted Text: JGNNQ
 Decrypted Text: HELLO
-```
