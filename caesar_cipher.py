@@ -15,8 +15,7 @@ def decrypt_caesar(text: str, shift: int) -> str:
 
     return decrypted
 
-
 if __name__ == "__main__":
     text = "JGNNQ"
     shift = 2
-print("Decrypted Output:", decrypt_caesar(text, shift))
+    print("Decrypted Output:", decrypt_caesar(text, shift))
