@@ -6,10 +6,10 @@ It is used to convert readable text into encrypted text and can be reversed usin
 
 ### Encryption Example
 Input: HELLO  
-Shift: 3  
-Output: KHOOR
+Shift: 2 
+Output: JGNNQ
 
 ### Decryption Example
-Input: KHOOR  
-Shift: 3  
+Input: JGNNQ  
+Shift: 2 
 Output: HELLO
