@@ -18,13 +18,12 @@ Suitable for beginners.
 Each character in the plain text is shifted forward by 2 using addition.
 ```
 Encrypted Example:
-H + 2 → J
-E + 2 → G
-L + 2 → N
-L + 2 → N
-O + 2 → Q
+'H', Plus 2 characters -> 'J'
+'E', Plus 2 characters -> 'G'
+'L', Plus 2 characters -> 'N'
+'L', Plus 2 characters -> 'N'
+'O', Plus 2 characters -> 'Q'
 Encrypted Character = Original Character + 2
-```
 ###Encryption output
 Input: HELLO  
 Shift: 2 
@@ -34,11 +33,12 @@ Output: JGNNQ
 Each encrypted character is shifted backward by 2 using subtraction.
 ```
 Decryption Example
-J − 2 → H
-G − 2 → E
-N − 2 → L
-N − 2 → L
-Q − 2 → O
+'J', Minus 2 characters -> 'H'
+'G', Minus 2 characters -> 'E'
+'N', Minus 2 characters -> 'L'
+'N', Minus 2 characters -> 'L'
+'Q', Minus 2 characters -> 'O'
+
 Decrypted Character = Encrypted Character − 2
 ```
 Decryption output
