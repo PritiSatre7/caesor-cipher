@@ -1,5 +1,24 @@
-def encrypt_caesar(text : str , shift: int) -> str:
-    pass
+
+"""
+
+Function for caesar_cipher.
+"""
+
+def encrypt_caesar(text, shift):
+    """
+    This Function encrypts the input text using caesar cipher.
+    Each character is shifted by the given value.
+
+    :param text: The input text to be encrypted.
+    :param shift: Number of characters to shift.
+    :return: Encrypted text.
+
+    """
+
+    if text == "":
+        return ""
+    else:
+        return chr(ord(text[0]) + shift) + encrypt_caesar(text[1:], shift)
 
 def decrypt_caesar(text: str, shift: int) -> str:
     """
@@ -25,7 +44,6 @@ def decrypt_caesar(text: str, shift: int) -> str:
 
     return decrypted
 
+
 if __name__ == "__main__":
-    text = "JGNNQ"
-    shift = 2
-    print("Decrypted Output:", decrypt_caesar(text, shift))
+    print(encrypt_caesar("Hello", 2))
