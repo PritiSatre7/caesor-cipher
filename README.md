@@ -5,5 +5,6 @@ This project allows you to securely encrypt messages and decrypt them back using
 
 ## Documentation
 
-[[Caesar Cipher Explanation](docs/ceaser-cypher.md)](https://github.com/PritiSatre7/caesor-cipher/blob/main/caesar-cipher.md)
+[Caesar Cipher Explanation](caesar-cipher.md)
+
 
