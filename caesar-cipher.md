@@ -1,5 +1,3 @@
-## Caesar Cipher
-
 ### Description
 Character Encryption is a simple technique used to secure text by modifying each character using a fixed key value.
 In this method, encryption is done by adding the key value to each character, while decryption is done by subtracting the same key value. 
