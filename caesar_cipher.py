@@ -32,6 +32,9 @@ def encrypt_caesar(text: str, shift: int) -> str:
 def decrypt_caesar(text: str, shift: int) -> str:
     """
         Decrypts the encrypted text using Caesar cipher.
+
+        The Caesar cipher shifts each alphabetic character in the plaintext by a fixed number of positions.
+        This function reverses that shift to retrieve the original message.
     """
     return shift_text(text, -shift)
 
