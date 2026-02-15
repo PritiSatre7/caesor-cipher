@@ -25,6 +25,9 @@ def shift_text(text: str, shift: int) -> str:
 def encrypt_caesar(text: str, shift: int) -> str:
     """
         Encrypts the input text using Caesar cipher.
+
+        Each letter in the plaintext is shifted forward in the alphabet by the specified number of positions.
+         Non-alphabetic characters are not changed.
     """
     return shift_text(text, shift)
 
