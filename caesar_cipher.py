@@ -4,6 +4,10 @@ Function for caesar_cipher.
 """
 
 def shift_text(text: str, shift: int) -> str:
+    """
+        Common function to shift alphabetical characters in the text.
+        Positive shift is used for encryption and negative shift for decryption.
+    """
     result = ""
 
     for ch in text:
@@ -19,10 +23,16 @@ def shift_text(text: str, shift: int) -> str:
 
 
 def encrypt_caesar(text: str, shift: int) -> str:
+    """
+        Encrypts the input text using Caesar cipher.
+    """
     return shift_text(text, shift)
 
 
 def decrypt_caesar(text: str, shift: int) -> str:
+    """
+        Decrypts the encrypted text using Caesar cipher.
+    """
     return shift_text(text, -shift)
 
 
