@@ -8,19 +8,23 @@ def shift_text(text: str, shift: int) -> str:
         Common function to shift alphabetical characters in the text.
         Positive shift is used for encryption and negative shift for decryption.
     """
+    digits = "0123456789"
+    symbols = "!@#$%^&*()_+-=[]{};:,.<>/?"
     result = ""
 
     for ch in text:
-        if ch.isalpha():
-            if ch.isupper():
-                result += chr((ord(ch) - ord('A') + shift) % 26 + ord('A'))
-            else:
-                result += chr((ord(ch) - ord('a') + shift) % 26 + ord('a'))
+        if ch.isupper():
+            result += chr((ord(ch) - ord('A') + shift) % 26 + ord('A'))
+        elif ch.islower():
+            result += chr((ord(ch) - ord('a') + shift) % 26 + ord('a'))
+        elif ch in digits:
+            result += digits[(digits.index(ch) + shift) % 10]
+        elif ch in symbols:
+            result += symbols[(symbols.index(ch) + shift) % len(symbols)]
         else:
             result += ch
 
     return result
-
 
 def encrypt_caesar(text: str, shift: int) -> str:
     """
@@ -43,6 +47,7 @@ def decrypt_caesar(text: str, shift: int) -> str:
 
 
 if __name__ == "__main__":
-    encrypted = encrypt_caesar("HELLO", 2)
-    print(encrypted)
-    print(decrypt_caesar(encrypted, 2))
+    encrypted = encrypt_caesar("HELLO 123!@", 2)
+    print("Encrypted:", encrypted)
+    decrypted = decrypt_caesar(encrypted, 2)
+    print("Decrypted:", decrypted)
