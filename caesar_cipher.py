@@ -7,7 +7,7 @@ Supports uppercase letters, lowercase letters, digits, and symbols.
 
 def shift_text(text: str, shift: int) -> str:
     """
-           Shift characters in the input text by a specified amount.
+        Shift characters in the input text by a specified amount.
 
         This function handles:
         - Uppercase letters (A-Z)
@@ -25,10 +25,10 @@ def shift_text(text: str, shift: int) -> str:
             str: The resulting string after shifting all supported characters.
 
          Example:
-        >>> shift_text("Hello 123!", 2)
-        'Jgnnq 345!'
-        >>> shift_text("Jgnnq 345!", -2)
-        'Hello 123!'
+            >>> shift_text("Hello 123!", 2)
+            'Jgnnq 345!'
+            >>> shift_text("Jgnnq 345!", -2)
+            'Hello 123!'
     """
 
     digits = "0123456789"
@@ -61,8 +61,8 @@ def encrypt_caesar(text: str, shift: int) -> str:
             str: Encrypted text
 
         Example:
-        >>> encrypt_caesar("HELLO 123!@", 2)
-        'JGNNQ 345#$'
+            >>> encrypt_caesar("HELLO 123!@", 2)
+            'JGNNQ 345#$'
     """
     return shift_text(text, shift)
 
@@ -79,8 +79,8 @@ def decrypt_caesar(text: str, shift: int) -> str:
             str: Decrypted (original) text.
 
         Example:
-        >>> decrypt_caesar("JGNNQ 345#$", 2)
-        'HELLO 123!@'
+             >>> decrypt_caesar("JGNNQ 345#$", 2)
+            'HELLO 123!@'
     """
     return shift_text(text, -shift)
 
