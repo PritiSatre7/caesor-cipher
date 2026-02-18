@@ -23,8 +23,9 @@ def shift_text(text: str, shift: int) -> str:
 
     Example:
             >>> shift_text("Hello 123!", 2)
-            'Jgnnq 345!'
-            >>> shift_text("Jgnnq 345!", -2)
+            'Jgnnq 345#'
+
+            >>> shift_text("Jgnnq 345#", -2)
             'Hello 123!'
     """
 
